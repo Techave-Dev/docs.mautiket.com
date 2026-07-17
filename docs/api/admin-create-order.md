@@ -51,12 +51,20 @@ Membutuhkan API Key atau JWT token dengan permission `event:update`.
     "buyerUserId": "01KXYZ...",
     "eventId": "01KXYZ...",
     "eventName": "DevSync 2026",
+    "eventLocation": "Jakarta Convention Center",
+    "eventMapsLink": "https://maps.example.com/...",
+    "eventStartAt": "2026-07-20T10:00:00+07:00",
+    "eventEndAt": "2026-07-20T18:00:00+07:00",
+    "organizerName": "Event Organizer",
     "status": "payment_pending",
-    "paymentStatus": "unpaid",
     "totalAmount": "500000",
+    "paymentStatus": "unpaid",
+    "participants": [],
+    "createdAt": "2026-07-17T10:00:00Z",
+    "updatedAt": "2026-07-17T10:00:00Z",
+    "createdUserId": "01KXYZ...",
     "isExistingUser": false,
-    "generatedPassword": "xK9mN...",
-    "participants": []
+    "generatedPassword": "xK9mN..."
   }
 }
 ```

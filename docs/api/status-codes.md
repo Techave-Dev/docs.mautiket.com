@@ -39,17 +39,6 @@ stateDiagram-v2
 | `unpaid` | Belum dibayar |
 | `paid` | Sudah dibayar |
 
-### Transisi Status
-
-```mermaid
-stateDiagram-v2
-    [*] --> unpaid
-    unpaid --> paid: Pembayaran berhasil
-    unpaid --> expired: Pembayaran kedaluwarsa
-    paid --> [*]
-    expired --> [*]
-```
-
 ## Participant Status
 
 | Status | Description |
