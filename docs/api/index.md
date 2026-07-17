@@ -45,7 +45,7 @@ Semua endpoint admin menggunakan **API Key** authentication. Lihat [Authenticati
 ## Base URL
 
 ```
-http://localhost:8080
+https://api.mautiket.com
 ```
 
 ## Format Response

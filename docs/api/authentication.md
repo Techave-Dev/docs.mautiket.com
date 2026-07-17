@@ -19,8 +19,8 @@ POST /auth/login
 Content-Type: application/json
 
 {
-  "email": "organizer@test.com",
-  "password": "password123"
+  "email": "your-email@example.com",
+  "password": "your-password"
 }
 ```
 
@@ -33,7 +33,7 @@ Response:
     "expiresIn": 900,
     "user": {
       "id": "01KXYZ...",
-      "email": "organizer@test.com",
+      "email": "your-email@example.com",
       "name": "Event Organizer"
     }
   }
@@ -73,7 +73,7 @@ API Key hanya ditampilkan sekali saat pembuatan. Simpan API Key di tempat yang a
 Tambahkan header `X-API-Key` pada setiap request:
 
 ```bash
-curl -X GET http://localhost:8080/events/:id/admin/orders \
+curl -X GET https://api.mautiket.com/events/:id/admin/orders \
   -H "X-API-Key: mk_..."
 ```
 
@@ -81,20 +81,20 @@ curl -X GET http://localhost:8080/events/:id/admin/orders \
 
 ```bash
 # 1. Login
-TOKEN=$(curl -s -X POST http://localhost:8080/auth/login \
+TOKEN=$(curl -s -X POST https://api.mautiket.com/auth/login \
   -H "Content-Type: application/json" \
-  -d '{"email":"organizer@test.com","password":"password123"}' \
+  -d '{"email":"your-email@example.com","password":"your-password"}' \
   | jq -r '.data.accessToken')
 
 # 2. Buat API Key
-API_KEY=$(curl -s -X POST http://localhost:8080/me/api-keys \
+API_KEY=$(curl -s -X POST https://api.mautiket.com/me/api-keys \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
   -d '{"name":"admin-automation"}' \
   | jq -r '.data.key')
 
 # 3. Gunakan API Key untuk admin order
-curl -s http://localhost:8080/events/:id/admin/orders \
+curl -s https://api.mautiket.com/events/:id/admin/orders \
   -H "X-API-Key: $API_KEY"
 ```
 
