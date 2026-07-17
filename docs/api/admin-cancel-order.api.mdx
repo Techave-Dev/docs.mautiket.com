@@ -1,0 +1,69 @@
+---
+id: admin-cancel-order
+title: "Admin cancel order"
+description: "Cancel an admin-created order. Decrements ticket quota and sends email notification."
+sidebar_label: "Admin cancel order"
+hide_title: true
+hide_table_of_contents: true
+api: eJzlV99v2zYQ/leIe2oBOUrT7kUoBiRtAmTNliBxtofAmM/i2WYjkQpJuXEF/e/DkfKP2k6bZtlekgfHpsi77747Hb9rwFFeW+XnkN00cERoyR7WfgrZzaAdJCDJ5VZVXhkNGXxAnVMhUAuUpdK93BJ6ksJYSXZPfKTcUknaO+FVfkte3NXGo0AthSMtnaASVSG08WqscmSre5CAx4mD7AbO2YyDQQIVWizJ8y/G9S2KC0tjspakKFBPapyQGBsrLLnKaEeiJOdwQk68Gio5FMaKIenha/aksSTI4DDPqfK9s+44JKDY8JRQkoUEXD6lEiFrwM8rPuC8VXoCbZtsgjmekfbi+uz0IztyRT1ZuVHy3F7FlWC/Qj+FBCzd1cqShMzbmn7KW2AoeFt5CeSfyic7GcTN5PyRkXPekRvtSXv+ilVVdJlKPzvG0GybMqPPlHtIoLKmIusVOX6qjadthwmUeH9GesJF9sv+fst/DxRah0uMGFjLOGOKg/mD/X3+t0HQJ0ieC79E/4hdC/q3mU3AefS120V6m0BXprsYonssq4KXziuyAb1wdZ6Tc+O6iEwEZnb5XT+Oo/zNwVtoO5Lf7aLsCKW4jOaej7vcyB9ENsNCydgCxqgKkhwWWWvs2jm0Fudc2Z5K9xxel69Fm8BYUfED/kK/gscm6zh0N+XEysvjM/3nkg+x4uOpaX6zneZrjbWfGqu+kvw/86yN/3tsai0fTeMlOVPbnPieEMujT6Xi7TYVJ8aOlJSkXxIP77Z5+MN4cRLsvhweDg52vRqVNdxccVSQONae9dALoSR49FMjWTqYcAUEBZFBSixtXNosZEybBtWXhhvPpU1387VpHm5r1k1kZwvNVtuCjQDri4XIvGLKIivrUnMzH7/91RcYbjvhzS3pPXFibIk+E8N4TLwP678OWTx2N0WlPtF8TeJ1zS7kbEPgcdCcxcuV7DlesLOQLWu3uNJjsw3yd6z7ijXuIZMiojI7vDgVvfBZa1/figVhE9TqK1lRkp5QYQqMkln4YCEQHYSw8iFDD9nuihLzUJRdpH3KpzhjERspn3pfuSxNJ8pP69FebsrUxy09SbO0xDp47Y2Ig+N8xYAO9vZ5gYugRL3mIIKISY64YUOvrUnG/2xGiGn2dO/TqkClGWsIuOkK9gZiwUIC2ZryDiggiTotPFwJ5q5wBwlMufSzG2iaETq6tkXb8vJdTZZHo0ECM7SK+0McSFToFRKyMRaOvkPHq8tOC7wWO0eFnXEtalpzQc+wqPkXJHBL8/WxIswHT0HyzRjxBAQLBttBmyxeqp+j5V/McDvxRlzbc90SOnMVN32IIHp9trPasdXiVyei2e/uHay10Yvzqz4kMOqmqTL0f7D4hccy/BKJNIGU0ArDWgMLIiCDaJPbFHYNctXlbkOX674w6TtTtdn+YiD8yWHtPNI0sYe27XJ/fPTgieW83NUl89C27T+1l5nC
+sidebar_class_name: "post api-method"
+info_path: docs/api/mautiket-admin-order-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Admin cancel order"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/events/{idOrSlug}/admin/orders/{orderId}/cancel"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Cancel an admin-created order. Decrements ticket quota and sends email notification.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
+
+<ParamsDetails
+  {...require("./admin-cancel-order.ParamsDetails.json")}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  {...require("./admin-cancel-order.RequestSchema.json")}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  {...require("./admin-cancel-order.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

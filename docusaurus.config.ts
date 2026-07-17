@@ -20,8 +20,8 @@ const config: Config = {
   onBrokenLinks: 'throw',
 
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'id',
+    locales: ['id'],
   },
 
   presets: [
@@ -51,7 +51,26 @@ const config: Config = {
         explicitSearchResultPath: true,
       },
     ],
+    [
+      'docusaurus-plugin-openapi-docs',
+      {
+        id: 'api',
+        docsPluginId: 'default',
+        config: {
+          api: {
+            specPath: 'docs/swagger/admin-order.json',
+            outputDir: 'docs/api',
+            sidebarOptions: {
+              groupPathsBy: 'tag',
+              categoryLinkSource: 'tag',
+            },
+          },
+        },
+      },
+    ],
   ],
+
+  themes: ['docusaurus-theme-openapi-docs'],
 
   themeConfig: {
     colorMode: {
@@ -69,6 +88,12 @@ const config: Config = {
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Panduan',
+        },
+        {
+          type: 'doc',
+          docId: 'api/index',
+          position: 'left',
+          label: 'API Reference',
         },
         {
           href: 'https://github.com/techave-dev/docs.mautiket.com',

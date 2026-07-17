@@ -1,0 +1,69 @@
+---
+id: admin-create-order
+title: "Admin create order"
+description: "Admin creates an order on behalf of a customer. Matches user by email or creates a new account with random password (verified=false). Free tickets complete immediately. Paid tickets flip to payment_pending."
+sidebar_label: "Admin create order"
+hide_title: true
+hide_table_of_contents: true
+api: eJzlWetz47gN/1c4/LQ7lR/JPnr1tJ3m2eYuu8kkzrW9bGYDS7DNi0RqScqJz6P/vQNStmhbfjS9T92ZjCORAAj+AIIANOMG40ILO+W9+xk/RtCojwo75r37h/Ih4gmaWIvcCiV5jx8lmZAs1ggWDQPJlE5QMyXZAMeQDpkaMmBxYazKULfZJ7DxGA0rDGo2mDLMQKRM6VoEk/jMII5VIS17FnbMNMhEZSwHY56VTtibCWoxFJj8ZQipwbdtdq4RmRXxE1rDYpXlKVpkIsswEWAxnbbZNYhkQTJMRc6sYjlMM5T2a44yEXLU5hG3MDK8d8+vaB+GP0Q8Bw0ZWnojRJb3f61xiFpjwlKQowJGyIZKM40mV9Igy9AYGKFhbx5F8kgbfUT5+JZWkpAhIRjHmNvWZcXOIy5I8BghQc0jbuIxZsB7M26nOTEYq4Uc8bKMVpU5m6C07O7y4pQWMmkxqpcRyZW+9SNOfg52zCOu8VshNCa8Z3WB21Z78MRo7LFKpkQRK2lRWnqEPE9FDKRH51dDyszWRanBrxjbpUXvOZLOF4kbHQljtRNChnC2OgGLI6WnF4kzhVY5aivQkNg567qyK8J2qDAQ2o5PwRL2zh95xEcoPfwiQWmFnX4usoEbcHhGPB8ries61bKatPLSm2aGSmenYBvhgiQRtA9Ir8O1ynKh5prEiKMsMtpcBimpO0T38FCu7ahJG+8z60IzeLlEOaJgcNDtRjwTcvFezjFp8J2ywZxNZES47NI33uXYgHxu1V2dnf1Bc+Afdg/o37KEExdYyMFe7a/LJk42mGnFEYop6juDeoOD+niXHNlts1v4nfOfyU0Ctp0NN3ep4tXDsULxCXJzKeTTZorPjW4yn721oO0G9UYoUdMOr6ug3kglNgybsxdhrJAjwicgGSiVIkiiUXoEUvyGeqOOOWgrYpGDtCYgAK2BPE1YzMweZt583iOOL0BXEe/xw2632+oetA4+7LD9MtPhR8/UP+j2uvT3y5YoErLS9fq36rUdq2yrS4SM3YN//Ovfvxwcvnv/4eMff/hT9+j45PTs/LURKpA847MvdMSUSr9w3uNf+EX/+Asv+XIYgzS9Grp7ds+AFvGXFk21JqApbLnL++9O3idP6V/O5wHwIdyuG9vgafvBsiuahlLeHXZrEd3uwbZQW3P9qMaSnSr0bp00R4T9lN0QoEPmP3w8/KFmJaZv+kQlO7jG1uam1+lALtqB23W+6U7/p37Le3K1Y2PBFmY/Y/trHLWP32OMnzD5Klx6oEEan3rRFMgY09Q940vurohm17iuj/2tU+QmXGJt9sSveSGbJvtLOqzzBkqtTZ7NtVx2yGDDe12a+9ndy9nHRdesVWy4gvZZ2N3nVY59u7D6JlsXMgdBWLl/m6wXCLubMyyNXjvuJT/btGKV9vOFkl/rEV9j+DsyGJ4XF8tO16ysKyEqpRYCwkG/aOPcz8HyjQQngSLhcK0T2V1ZSI8yKqUa78AiTzYmIWS7qnrZbv2rHH2ezUwRx2jMsEh9Cu5St13OA4P44PCdz/7KiL/vdtdzuGNIWJUJ/n55XLwzqk0gFYkT3h6CSP2ZRK2Vfn3CsHvVRY5Ll67AdAd+PhvY11hnrt4WhtWr7G/pnxd4sBqP15q5IVW/k1DYsdLit98zX9+NuFT261AVMtkbxhs0qtAxMqksW7C+Fop361CcKz0QSYLye8Lh/ToOn5Vl507ud4PDh6YIeCEtagkpu0U9Qc3OXBT6TjBxK9qxSqhvpdwd4NpXPd5xRY3pzObtrbID1JHsKN++i7hxePnWXaFT4uGUcs27nLeEkAch7HWu4v/jP/vUlERjmFVPKNvsXOkMbI89ejb2Zzf+10fKTaubIRc/4TTo9FXBbd7hCvt8tEcy2k3dYjurS6dF6VZDtdrgCgrRAE9fKdYDQREXlF3zmmq1lqn5qh0s3qtCIkgl1lPVsGKXQ7WO6Sco+uIJLfNNZJfFsKPrC9Zyv4W0xRObm7Mq51mGcoSpSqHqNFsnwQHk2rfCOv/ZJLs6MhC7I1Ntq4/xGCaEgPeQeTUzEnZcDFwhYz1JK8FJJ4PCrdoauJqM3Mtv6LDtCiZy0QxksEDYJfd685VGV9BN/T/sqfvzYPHFdvIUhOvQOKhn1UGu+sB0YHtBp9oZn1dlr2vGj+n49+75bDYAg3c6LUsa/lagpg8WDxGfgBYwICegZr0w9JzwntvWFtDf3FQJ0VvW2EZv3MP8oEs65RNIC3rjEX/CadhyLykXrw76f6fV//B5oVFhr9j6J4eF7vRRwROdeCVafZJTU6zdMjWHF7uV9iGI5NdXt30e8UH1NSFzVxDX8EzRDZ49ksqB4sKzG5vxORC8x71MCp1QBe068j65yFs9BC2GZVuthmS/EfqlbTWyzGY+rpflgt5PbeRYfMqp3IJwKMvyP1bsYqE=
+sidebar_class_name: "post api-method"
+info_path: docs/api/mautiket-admin-order-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Admin create order"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/events/{idOrSlug}/admin/orders"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Admin creates an order on behalf of a customer. Matches user by email or creates a new account with random password (verified=false). Free tickets complete immediately. Paid tickets flip to payment_pending.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
+
+<ParamsDetails
+  {...require("./admin-create-order.ParamsDetails.json")}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  {...require("./admin-create-order.RequestSchema.json")}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  {...require("./admin-create-order.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      
