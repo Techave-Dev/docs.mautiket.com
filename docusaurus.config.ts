@@ -7,10 +7,6 @@ const config: Config = {
   tagline: 'Dokumentasi lengkap platform MauTiket',
   favicon: 'img/favicon.ico',
 
-  future: {
-    v4: true,
-  },
-
   url: 'https://docs.mautiket.com',
   baseUrl: '/',
 
@@ -51,26 +47,9 @@ const config: Config = {
         explicitSearchResultPath: true,
       },
     ],
-    [
-      'docusaurus-plugin-openapi-docs',
-      {
-        id: 'api',
-        docsPluginId: 'default',
-        config: {
-          api: {
-            specPath: 'docs/swagger/admin-order.json',
-            outputDir: 'docs/api',
-            sidebarOptions: {
-              groupPathsBy: 'tag',
-              categoryLinkSource: 'tag',
-            },
-          },
-        },
-      },
-    ],
   ],
 
-  themes: ['docusaurus-theme-openapi-docs', '@docusaurus/theme-mermaid'],
+  themes: ['@docusaurus/theme-mermaid'],
 
   themeConfig: {
     colorMode: {
