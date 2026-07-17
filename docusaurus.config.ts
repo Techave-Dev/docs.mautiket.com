@@ -176,7 +176,17 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+    mermaid: {
+      theme: {
+        light: 'default',
+        dark: 'dark',
+      },
+    },
   } satisfies Preset.ThemeConfig,
+
+  markdown: {
+    mermaid: true,
+  },
 };
 
 export default config;
