@@ -70,7 +70,7 @@ const config: Config = {
     ],
   ],
 
-  themes: ['docusaurus-theme-openapi-docs'],
+  themes: ['docusaurus-theme-openapi-docs', '@docusaurus/theme-mermaid'],
 
   themeConfig: {
     colorMode: {
