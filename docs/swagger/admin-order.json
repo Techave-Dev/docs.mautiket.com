@@ -4,8 +4,7 @@
     "description": "MauTiket Admin Order API - API untuk admin/organizer mengelola order tiket event.",
     "title": "MauTiket Admin Order API",
     "contact": {
-      "name": "Techave",
-      "url": "https://github.com/techave-dev/mautiket-be"
+      "name": "MauTiket Support"
     },
     "version": "2.0"
   },
