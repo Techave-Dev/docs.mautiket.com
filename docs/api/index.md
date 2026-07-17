@@ -14,7 +14,7 @@ MauTiket API menyediakan endpoint untuk mengelola order tiket event. API ini men
 
 ```mermaid
 flowchart TD
-    A[Segura Home] --> B[Tiket konser, dll]
+    A[MauTiket Home] --> B[Tiket konser, dll]
     B --> C[Detail acara]
     C --> D[Verifikasi Order]
     D --> E{DB Tiket}
