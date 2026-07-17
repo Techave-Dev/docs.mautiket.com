@@ -1,0 +1,8 @@
+{
+  "label": "Admin Order API",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "API untuk admin/organizer mengelola order tiket event."
+  }
+}
