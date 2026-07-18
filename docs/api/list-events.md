@@ -27,9 +27,17 @@ Membutuhkan API Key atau JWT token. Gunakan `ownerId=me` untuk mendapatkan event
 | `ownerId` | string | - | **Wajib**: Gunakan `me` untuk events milik user yang sedang login |
 | `scope` | string | - | `managed` (events yang diorganize) atau `all` (semua events, super_admin only) |
 | `status` | string | - | Filter: `draft`, `published`, `closed`, `archived` |
+| `isFeatured` | bool | - | Filter by featured status |
+| `categoryId` | string | - | Filter by category ULID |
+| `subcategoryId` | string | - | Filter by subcategory ULID |
+| `eventTypeId` | string | - | Filter by event type ULID |
 | `search` | string | - | Cari berdasarkan nama atau lokasi |
 | `sort` | string | `createdAt` | Sort field: `startAt`, `endAt`, `name`, `createdAt` |
 | `order` | string | `desc` | Sort order: `asc`, `desc` |
+| `startAtFrom` | string | - | Filter events starting from date (ISO8601) |
+| `startAtTo` | string | - | Filter events starting up to date (ISO8601) |
+| `endAtFrom` | string | - | Filter events ending from date (ISO8601) |
+| `endAtTo` | string | - | Filter events ending up to date (ISO8601) |
 
 ## Response
 
@@ -46,17 +54,27 @@ Membutuhkan API Key atau JWT token. Gunakan `ownerId=me` untuk mendapatkan event
       "name": "DevSync 2026",
       "slug": "devsync-2026",
       "description": "Event teknologi terbesar",
+      "terms": "Syarat dan ketentuan berlaku",
       "location": "Jakarta Convention Center",
+      "mapsLink": "https://maps.example.com/...",
       "startAt": "2026-07-20T10:00:00+07:00",
       "endAt": "2026-07-20T18:00:00+07:00",
+      "timezone": "Asia/Jakarta",
       "status": "published",
       "isPublic": true,
+      "feeBearer": "buyer",
       "eventTypeId": "01KXYZ...",
       "categoryId": "01KXYZ...",
+      "subcategoryId": "01KXYZ...",
       "isFeatured": true,
-      "minPrice": "250000",
-      "maxPrice": "500000",
-      "createdAt": "2026-07-17T10:00:00Z"
+      "isTransferable": true,
+      "transferDeadline": "2026-07-19T23:59:59+07:00",
+      "quota": 200,
+      "isFinished": false,
+      "minPrice": "250000.00",
+      "maxPrice": "500000.00",
+      "createdAt": "2026-07-17T10:00:00Z",
+      "updatedAt": "2026-07-17T10:00:00Z"
     }
   ],
   "meta": {

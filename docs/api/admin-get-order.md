@@ -65,10 +65,21 @@ Membutuhkan API Key atau JWT token dengan permission `event:read`.
     "participants": [
       {
         "id": "01KXYZ...",
+        "orderId": "01KXYZ...",
+        "eventId": "01KXYZ...",
+        "ticketCategoryId": "01KXYZ...",
+        "userId": "01KXYZ...",
         "ticketNumber": "TKT-001",
+        "qrCode": "https://api.example.com/qr/TKT-001",
+        "status": "registered",
+        "identityNumber": "3201234567890001",
         "name": "John Doe",
         "email": "john@example.com",
-        "status": "registered"
+        "phone": "+6281234567890",
+        "gender": "male",
+        "birthDate": "1990-01-15",
+        "formData": {},
+        "createdAt": "2026-07-17T10:00:00Z"
       }
     ],
     "createdAt": "2026-07-17T10:00:00Z",
