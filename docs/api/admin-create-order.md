@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
 title: Admin Create Order
 description: Buat order untuk customer walk-in
 ---

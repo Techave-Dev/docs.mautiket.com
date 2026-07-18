@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 13
 title: Get Tickets by Event
 description: Daftar ticket categories untuk event
 ---

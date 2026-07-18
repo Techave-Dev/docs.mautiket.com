@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 12
 title: Get Event Detail (Organizer)
 description: Detail event untuk organizer
 ---
