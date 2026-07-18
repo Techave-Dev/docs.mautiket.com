@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 title: Admin Get Order Detail
 description: Dapatkan detail single order
 ---
