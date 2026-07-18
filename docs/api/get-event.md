@@ -1,22 +1,22 @@
 ---
 sidebar_position: 2
-title: Get Event Detail
-description: Dapatkan detail event
+title: Get Event Detail (Organizer)
+description: Detail event untuk organizer
 ---
 
-# Get Event Detail
+# Get Event Detail (Organizer)
 
-Dapatkan detail lengkap dari event berdasarkan ID atau slug.
+Dapatkan detail lengkap dari event termasuk semua ticket categories (active + inactive).
 
 ## Endpoint
 
 ```
-GET /events/{idOrSlug}
+GET /events/:idOrSlug/organizer
 ```
 
 ## Authentication
 
-Tidak membutuhkan autentikasi untuk event publik.
+Membutuhkan API Key atau JWT token dengan permission `event:read`.
 
 ## Path Parameters
 
@@ -66,6 +66,19 @@ Tidak membutuhkan autentikasi untuk event publik.
         "isSoldOut": false,
         "saleStartAt": "2026-07-01T00:00:00+07:00",
         "saleEndAt": "2026-07-19T23:59:59+07:00"
+      },
+      {
+        "id": "01KXYZ...",
+        "name": "Regular",
+        "description": "Regular Ticket",
+        "type": "paid",
+        "quota": 100,
+        "sold": 100,
+        "price": "250000",
+        "status": "active",
+        "isSoldOut": true,
+        "saleStartAt": "2026-07-01T00:00:00+07:00",
+        "saleEndAt": "2026-07-19T23:59:59+07:00"
       }
     ],
     "createdAt": "2026-07-17T10:00:00Z",
@@ -78,5 +91,7 @@ Tidak membutuhkan autentikasi untuk event publik.
 
 | Code | Description |
 |------|-------------|
+| 401 | Tidak terautentikasi |
+| 403 | Tidak memiliki akses |
 | 404 | Event tidak ditemukan |
 | 500 | Server error |
