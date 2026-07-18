@@ -1,12 +1,12 @@
 ---
 sidebar_position: 1
-title: List Events
-description: Daftar semua events
+title: List Events (Organizer)
+description: Daftar events milik organizer
 ---
 
-# List Events
+# List Events (Organizer)
 
-Daftar semua events dengan filter opsional.
+Daftar events milik organizer dengan filter opsional.
 
 ## Endpoint
 
@@ -16,7 +16,7 @@ GET /events
 
 ## Authentication
 
-Tidak membutuhkan autentikasi untuk view publik. Membutuhkan autentikasi untuk view organizer.
+Membutuhkan API Key atau JWT token. Gunakan `ownerId=me` untuk mendapatkan events milik user yang sedang login.
 
 ## Query Parameters
 
@@ -24,14 +24,12 @@ Tidak membutuhkan autentikasi untuk view publik. Membutuhkan autentikasi untuk v
 |-----------|------|---------|-------------|
 | `page` | int | 1 | Nomor halaman |
 | `limit` | int | 20 | Jumlah item per halaman (max 100) |
-| `ownerId` | string | - | Filter by owner ID. Gunakan `me` untuk user yang sedang login |
+| `ownerId` | string | - | **Wajib**: Gunakan `me` untuk events milik user yang sedang login |
 | `scope` | string | - | `managed` (events yang diorganize) atau `all` (semua events, super_admin only) |
-| `status` | string | `published` | Filter: `draft`, `published`, `closed`, `archived` |
-| `categoryId` | string | - | Filter by category ULID |
-| `eventTypeId` | string | - | Filter by event type ULID |
+| `status` | string | - | Filter: `draft`, `published`, `closed`, `archived` |
 | `search` | string | - | Cari berdasarkan nama atau lokasi |
-| `sort` | string | `startAt` | Sort field: `startAt`, `endAt`, `name`, `createdAt`, `isFeatured` |
-| `order` | string | `asc` | Sort order: `asc`, `desc` |
+| `sort` | string | `createdAt` | Sort field: `startAt`, `endAt`, `name`, `createdAt` |
+| `order` | string | `desc` | Sort order: `asc`, `desc` |
 
 ## Response
 
@@ -74,5 +72,5 @@ Tidak membutuhkan autentikasi untuk view publik. Membutuhkan autentikasi untuk v
 
 | Code | Description |
 |------|-------------|
-| 400 | Validasi gagal |
+| 401 | Tidak terautentikasi |
 | 500 | Server error |
