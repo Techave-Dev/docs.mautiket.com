@@ -1,5 +1,5 @@
 ---
-sidebar_position: 9
+sidebar_position: 11
 title: Admin Cancel Order
 description: Batalkan admin order
 ---
